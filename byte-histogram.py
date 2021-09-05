@@ -12,7 +12,7 @@ DEBUG = False
 
 def parse_args():
     parser = argparse.ArgumentParser(description='Use log scaling (default) for identifying '
-        'an encrypted file. All bars should be maxed and relative std. dev. close to 1.\n
+        'an encrypted file. All bars should be maxed and relative std. dev. close to 1. '
         'Change the scaling (several can be combined) for other views.')
     parser.add_argument('input_file_name', type=Path)
     parser.add_argument('--scale', nargs='*', choices=['log', 'max', 'minmax'], 
